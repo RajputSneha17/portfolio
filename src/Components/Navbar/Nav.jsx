@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import './Nav.css';
+import React, { useState, useEffect } from "react";
+import "./Nav.css";
 
 const Nav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true); // Default dark mode enabled
 
   useEffect(() => {
-    document.body.classList.add('dark-mode'); // Apply dark mode on mount
+    document.body.classList.add("dark-mode"); // Apply dark mode on mount
   }, []);
 
   const toggleSidebar = () => {
@@ -19,20 +19,27 @@ const Nav = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode', !darkMode);
+    document.body.classList.toggle("dark-mode", !darkMode);
   };
 
   const scroll = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
 
+  const handleClick = (section) => {
+    closeSidebar();
+    scroll(section);
+  };
   return (
-    <div className='navbarheight' id='Navbar'>
+    <div className="navbarheight" id="Navbar">
       {/* Overlay */}
-      <div className={`overlay ${sidebarOpen ? 'active' : ''}`} onClick={closeSidebar}></div>
+      <div
+        className={`overlay ${sidebarOpen ? "active" : ""}`}
+        onClick={closeSidebar}
+      ></div>
 
       {/* Navbar */}
-      <div className={`navbar ${sidebarOpen ? 'hide' : ''}`}>
+      <div className={`navbar ${sidebarOpen ? "hide" : ""}`}>
         <div className="navleft">
           <div className="logo-icon">S</div>
           <p className="logo">Sneha's Portfolio</p>
@@ -70,14 +77,16 @@ const Nav = () => {
       </div>
 
       {/* Sidebar (Visible on Small Screens) */}
-      <div className={`sidebar ${sidebarOpen ? 'open' : ''}`}>
-        <div className="close-btn" onClick={closeSidebar}>×</div>
+      <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+        <div className="close-btn" onClick={closeSidebar}>
+          ×
+        </div>
         <ul>
-          <li onClick={closeSidebar}>Home</li>
-          <li onClick={closeSidebar}>About</li>
-          <li onClick={closeSidebar}>Skills</li>
-          <li onClick={closeSidebar}>Project</li>
-          <li onClick={closeSidebar}>Contact Me</li>
+          <li onClick={() => handleClick("Home")}>Home</li>
+          <li onClick={() => handleClick("About")}>About</li>
+          <li onClick={() => handleClick("Skills")}>Skills</li>
+          <li onClick={() => handleClick("Project")}>Project</li>
+          <li onClick={() => handleClick("Contact")}>Contact Me</li>
         </ul>
         <div className="navright">
           <input
