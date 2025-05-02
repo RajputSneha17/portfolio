@@ -1,0 +1,95 @@
+.footer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  background-color: #f8f8f8a9;
+  color: #333;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+  margin-top: auto;
+}
+
+a {
+  all: unset;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #555;
+}
+
+.footer li:hover {
+  color: #ee0979; /* Hover effect */
+}
+
+/* Dark Mode */
+body.dark-mode .footer {
+  background-color: #242424;
+  color: white;
+}
+
+body.dark-mode .footer li {
+  color: #bbb;
+}
+
+body.dark-mode .footer li:hover {
+  color: #ff6a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-copy {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-copy {
+    font-size: 12px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}

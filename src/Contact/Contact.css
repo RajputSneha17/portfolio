@@ -1,0 +1,47 @@
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+ul > li:hover {
+  color: #ff6a00;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-heading {
+    font-size: 22px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 14px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}

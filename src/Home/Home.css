@@ -1,0 +1,291 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  height: 100vh;
+  position: relative;
+}
+
+.left {
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.left > h4,
+.left > h1,
+.left > p {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes glowEffect {
+  0%,
+  100% {
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(15px);
+  }
+}
+
+@keyframes movingLights {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+
+.lights-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  animation: movingLights 4s linear infinite;
+  z-index: 1;
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 99, 71, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(15px);
+  animation: glowEffect 2s infinite alternate;
+}
+
+.light:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  background-color: rgba(255, 99, 71, 0.8);
+}
+.light:nth-child(2) {
+  top: 40%;
+  left: 80%;
+  background-color: rgba(255, 140, 105, 0.8);
+}
+.light:nth-child(3) {
+  top: 70%;
+  left: 50%;
+  background-color: rgba(255, 69, 0, 0.7);
+}
+.light:nth-child(4) {
+  top: 90%;
+  left: 10%;
+  background-color: rgba(255, 160, 122, 0.6);
+}
+.light:nth-child(5) {
+  top: 30%;
+  left: 60%;
+  background-color: rgba(255, 127, 80, 0.7);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left > h4 {
+  font-size: 20px;
+  color: #9c9a9a;
+}
+
+.left > h1 {
+  font-size: 36px;
+  color: black;
+}
+
+.left > p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.521);
+  line-height: 1.6;
+}
+
+body.dark-mode .left > h4 {
+  font-size: 20px;
+  color: #9c9a9a;
+}
+
+body.dark-mode .left > h1 {
+  font-size: 36px;
+  color: #424141;
+}
+
+body.dark-mode .left > p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.66);
+  line-height: 1.6;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.right > img {
+  max-width: 100%;
+  height: auto;
+  filter: brightness(0.6) contrast(1.2);
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .left {
+    padding: 40px;
+  }
+
+  .right {
+    padding-right: 40px;
+  }
+
+  .right > img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    margin-top: 20px;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.right > img {
+  animation: slideInRight 1s ease-out;
+}
+
+@keyframes expandLine {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  50% {
+    width: 50%;
+    opacity: 0.7;
+  }
+  100% {
+    width: 90%;
+    opacity: 1;
+  }
+}
+
+.left hr {
+  width: 90%;
+  height: 2px;
+  background-color: #ff6347;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin: 10px;
+  transform: translateX(-50%);
+  animation: expandLine 1s ease-out;
+}
+
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left button {
+  background: linear-gradient(45deg, #ff6a00, #ee0979);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10000;
+  animation: fadeInBounce 1.2s ease-in-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 99, 71, 0.8);
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.left button i {
+  display: inline-block;
+  animation: bounceArrow 1s infinite ease-in-out;
+}
+
+/* Existing styles above */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+}

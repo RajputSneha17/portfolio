@@ -1,0 +1,65 @@
+.top {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.top > h3 {
+  color: tomato;
+}
+
+.skills-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  perspective: 1000px;
+}
+
+.skill-box {
+  width: 120px;
+  height: 140px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  justify-content: center;
+  transform-origin: center;
+  animation: waving 2s infinite ease-in-out;
+}
+
+.skill-box img {
+  width: 60px;
+  height: 60px;
+}
+
+.skill-box p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Waving animation like a flag */
+@keyframes waving {
+  0% {
+    transform: rotateX(10deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(-10deg) rotateY(10deg);
+  }
+  100% {
+    transform: rotateX(10deg) rotateY(0deg);
+  }
+}
+
+body.dark-mode .top p {
+  color: white;
+}

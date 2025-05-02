@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .skills-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .skills-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .skills-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 22px;
+  }
+
+  .skill-item {
+    width: 100%;
+    text-align: center;
+  }
+}
