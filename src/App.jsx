@@ -1,5 +1,5 @@
 import "./App.css";
-import Nav from "./components/Navbar/Nav";
+import Nav from "./Components/Navbar/Nav";
 import Foot from "./components/Footer/Foot";
 import Home from "./Home/Home";
 import About from "./About/About";
