@@ -49,7 +49,7 @@ const Project = () => {
             help.
           </p>
           <button>
-            VISIT SITE <i class="fa-solid fa-angle-right"></i>
+            Panding <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
       </div>

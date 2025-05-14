@@ -1,6 +1,7 @@
 import React from "react";
 import homeImg from "../assets/homeImg.webp";
 import "./Home.css";
+import resume from "../assets/resume.pdf";
 
 const Home = () => {
   return (
@@ -20,8 +21,11 @@ const Home = () => {
           applications with creative and <br /> impactful solutions.
         </p>
         <hr />
+
         <button>
-          Resume <i class="fa-solid fa-arrow-down"></i>
+          <a href={resume} download="Sneha_Rajput_Resume.pdf">
+            Resume <i class="fa-solid fa-arrow-down"></i>
+          </a>
         </button>
       </div>
 
