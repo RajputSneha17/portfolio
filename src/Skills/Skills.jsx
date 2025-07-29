@@ -23,7 +23,6 @@ const skills = [
   { name: "Node.js", img: nodejsImg },
   { name: "Express.js", img: expressImg },
   { name: "MongoDB", img: mongodbImg },
-  { name: "SQL", img: sqlImg },
   { name: "Git", img: gitImg },
   { name: "GitHub", img: githubImg },
 ];

@@ -17,21 +17,12 @@ const About = () => {
             experiences
           </li>
           <li>
-            Skilled in frontend development with a focus on creating
+            Skilled in MERN Stack development with a focus on creating
             user-friendly interfaces
-          </li>
-          <li>
-            Learning backend technologies to develop more functional web
-            applications
-          </li>
-          <li>
-            Familiar with database management and version control for efficient
-            project handling
           </li>
           <li>Pursuing BCA from Amity University Online</li>
           <li>
-            Learning full-stack development and DSA with Java through Sigma 4.0
-            by Apna College
+            I have completed full-stack development through Sigma 4.0 by Apna College.
           </li>
           <li>
             Always eager to explore new technologies, take on challenges, and

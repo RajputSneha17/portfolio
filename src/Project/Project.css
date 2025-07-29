@@ -42,25 +42,30 @@
 
 .card > p {
   margin: 20px 0px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
-.card > button {
+.card > .button> button {
   background: linear-gradient(45deg, #ff6a00, #ee0979);
   color: white;
   border: none;
   padding: 8px 18px;
-  font-size: 18px;
+  font-size: 13px;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.card > button:hover {
+.card > .button> button:hover {
   opacity: 0.8;
 }
 body.dark-mode .card {
   background-color: #1e1e1e;
   color: white;
+}
+
+.button{
+  display: flex;
+  gap: 10px;
 }
 
 /* Responsive styles */

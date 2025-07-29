@@ -35,11 +35,13 @@ const Contact = () => {
             If this website created a wonderful experience for you and left a
             lasting impression I would love to hear from you !
           </p>
-          <button>
-            <a href={resume} download="Sneha_Rajput_Resume.pdf">
-              DOWNLOAD HERE <i className="fa-solid fa-download"></i>
-            </a>
-          </button>
+          <div className="button">
+            <button>
+              <a href={resume} download="Sneha_Rajput_Resume.pdf">
+                DOWNLOAD HERE <i className="fa-solid fa-download"></i>
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>
