@@ -3,6 +3,7 @@ import "./Project.css";
 import food from "../assets/food.png";
 import Hotel from "../assets/Hotel.png";
 import admin from "../assets/admin.png";
+import yoga from "../assets/yoga.png";
 
 const Project = () => {
   return (
@@ -73,6 +74,27 @@ const Project = () => {
             </button>
             <button>
               <a href="https://github.com/RajputSneha17/Food-Delivery">
+                GITHUB REPO <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div className="cardone card">
+          <img src={yoga} alt="" />
+          <h3>Project Three | Yoga && Wellness</h3>
+          <p>
+            A full-stack web application to create, save, and explore yoga
+            sessions. This app allows users to save yoga sessions as drafts or
+            publish them with a title, tags, and a JSON file content.
+          </p>
+          <div className="button">
+            <button>
+              <a href="https://yoga-app-gamma.vercel.app/">
+                LIVE DEMO <i class="fa-solid fa-angle-right"></i>
+              </a>
+            </button>
+            <button>
+              <a href="https://github.com/RajputSneha17/Yoga-App">
                 GITHUB REPO <i class="fa-solid fa-angle-right"></i>
               </a>
             </button>
