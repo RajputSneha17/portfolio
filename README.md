@@ -1,12 +1,42 @@
-# React + Vite
+# 💼 Sneha's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **personal portfolio website** built using **React JS**, showcasing my skills, projects, and contact information. It highlights my work as a **Full-Stack Developer**, and includes a downloadable resume along with a dark/light mode toggle.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Visit My Portfolio](https://cute-beignet-f21885.netlify.app/)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 💻 Tech Stack
+
+- **React JS**
+- **HTML**
+- **CSS**
+
+---
+
+## ✨ Features
+
+- 👩‍💻 About section introducing myself
+- 🛠️ Skills section listing technologies I use
+- 📂 Projects section showcasing my work
+- 📄 Resume download button
+- 📞 Contact information to reach me easily
+- 🌙 Light/Dark Mode toggle
+- 📱 Fully responsive design (mobile-friendly)
+
+
+---
+
+## 🧑‍💻 Getting Started
+
+Follow the steps below to run the portfolio locally:
+
+```bash
+git clone https://github.com/RajputSneha17/portfolio.git
+cd portfolio
+npm install
+npm start
